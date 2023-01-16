@@ -7,5 +7,5 @@ const mongoose = require('mongoose');
     user : {type : Schema.Types.ObjectId, ref: "User"}
  }, {timestamps : true})
 
-const blogModel = mongoose.model("Blog", postSchema);
-module.exports = blogModel;
+const postModel = mongoose.model("Post", postSchema);
+module.exports = postModel;
